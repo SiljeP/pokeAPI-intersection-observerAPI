@@ -9,13 +9,18 @@ body {
     color: $light-text;
 }
 
-.container {
+section {
     padding: 1rem;
-    display: flex;
-    background: linear-gradient(to top, black, white);
-
-    h1 {
+   h1 {
         font-size: xx-large;
         text-align: center;
     }
+}
+
+.pokeListItem{
+    text-transform: capitalize;
+    font-size: x-large;
+    padding: 1.5em;
+    list-style: none;
+    text-align: center;
 }
