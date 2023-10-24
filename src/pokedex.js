@@ -23,7 +23,6 @@ export default (async function init(offset = 0) {
         }
     })
 
-
     function callback(entries) {
         entries.forEach(entry => {
             if (!entry.isIntersecting) return // guard clause
