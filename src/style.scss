@@ -31,3 +31,19 @@ section {
     width: 70%;
     font-size: large;
 }
+
+html, body{
+    scroll-behavior: smooth;
+
+}
+
+.backToTop{
+    display: block;
+    margin: auto;
+    width: 120px;
+    padding: .5em;
+    height: 30px;
+    border: 5px solid white;
+    text-transform: uppercase;
+    cursor: pointer;
+}
