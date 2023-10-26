@@ -1,19 +1,12 @@
 export default (function () {
     if (!window.location.pathname.includes("article.html")) return //guard clause
 
+    //Paragraphs herunder
     const OBSERVER = new IntersectionObserver(callback, {
         threshold: 1.0
     })
     const PARAGRAPHS = document.querySelectorAll(".article p")
     PARAGRAPHS.forEach(p => OBSERVER.observe(p))
-
-
-    const BTN_OBSERVER = new IntersectionObserver(btncallback, {
-        threshold: 1.0
-    })
-    const BUTTON = document.querySelector(".backToTop")
-    BTN_OBSERVER.observe(BUTTON)
-
     function callback(entries) {
         entries.forEach(entry => {
             if (!entry.isIntersecting) {
@@ -28,6 +21,13 @@ export default (function () {
 
         })
     }
+
+    //Buttons herunder
+    const BTN_OBSERVER = new IntersectionObserver(btncallback, {
+        threshold: 1.0
+    })
+    const BUTTON = document.querySelector(".backToTop")
+    BTN_OBSERVER.observe(BUTTON)
     function btncallback(entries) {
         entries.forEach(entry => {
             if (!entry.intersectionRatio >= 0.5) {
