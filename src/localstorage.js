@@ -1,4 +1,5 @@
 export default (function () {
+    if (!window.location.pathname.includes("index.html")) return
     const FORM = document.querySelector(".nameForm")
     const NAME = document.querySelector(".name")
 
@@ -10,7 +11,7 @@ export default (function () {
    function submitHandler (event) {
         event.preventDefault
         localStorage.setItem("name", event.target.nameInput.value)
-        NAME.innerText = event.target.nameInput.value
+        NAME.innerText = localStorage.getItem("name")
     }
 
 })()

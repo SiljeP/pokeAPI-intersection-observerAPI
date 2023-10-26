@@ -1,4 +1,6 @@
 export default (async function () {
+    if (!window.location.pathname.includes("index.html")) return
+
     const json = {
         "name": "Brian",
         "age": 55,
