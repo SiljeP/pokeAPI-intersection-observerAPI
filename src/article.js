@@ -12,7 +12,6 @@ export default (function () {
             if (!entry.isIntersecting) {
                 entry.target.style.fontWeight = "normal"
             }
-
             if (entry.intersectionRatio >= 0.5) {
                 entry.target.style.fontWeight = "bold"
             } else {
