@@ -21,9 +21,9 @@ export default (function () {
         })
     }
 
-    //Buttons herunder
+    //Button herunder
     const BTN_OBSERVER = new IntersectionObserver(btncallback, {
-        threshold: 1.0
+        threshold: 0.5
     })
     const BUTTON = document.querySelector(".backToTop")
     BTN_OBSERVER.observe(BUTTON)

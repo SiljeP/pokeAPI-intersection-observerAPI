@@ -38,7 +38,6 @@ html, body{
 }
 
 .backToTop{
-    display: block;
     margin: auto;
     width: 120px;
     padding: .5em;
@@ -46,4 +45,6 @@ html, body{
     border: 5px solid white;
     text-transform: uppercase;
     cursor: pointer;
+    color: white;
+    text-decoration: none;
 }
