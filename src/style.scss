@@ -1,5 +1,14 @@
+@use "./slider";
+@use "./progress";
 :root {
     --mainBg: mediumpurple;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
 }
 
 $light-text: moccasin;
@@ -9,7 +18,7 @@ body {
     color: $light-text;
 }
 
-section {
+.pokesection {
     padding: 1rem;
    h1 {
         font-size: xx-large;
@@ -30,6 +39,7 @@ section {
     margin: auto;
     width: 70%;
     font-size: large;
+    padding: 1em;
 }
 
 html, body{
@@ -38,10 +48,11 @@ html, body{
 }
 
 .backToTop{
-    margin: auto;
+    margin: 2em auto;
+    display: block;
     width: 120px;
     padding: .5em;
-    height: 30px;
+    height: 70px;
     border: 5px solid white;
     text-transform: uppercase;
     cursor: pointer;
