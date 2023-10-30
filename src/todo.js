@@ -1,6 +1,6 @@
 import getJSONfromLocalStorage from "./getJSONfromLocalstorage"
+import printList from "./printList"
 import saveJSONtoLocalStorage from "./saveJSONtoLocalstorage"
-
 
 export default (function() {
 	if (!window.location.pathname.includes("todo.html")) return // guard clause
@@ -12,11 +12,11 @@ export default (function() {
 
         saveJSONtoLocalStorage("todo-items",
         {name: event.target.item.value, done: false})
-		
+		printList()
 	}
     //Alt over her er om at gemme ting i local storage
     //--------------------------------------------------------------------------------------//
 
-    
+    printList()
 
 })()
