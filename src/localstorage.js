@@ -9,7 +9,7 @@ export default (function () {
     FORM. addEventListener("submit", submitHandler)
 
    function submitHandler (event) {
-        event.preventDefault
+        event.preventDefault()
         localStorage.setItem("name", event.target.nameInput.value)
         NAME.innerText = localStorage.getItem("name")
     }

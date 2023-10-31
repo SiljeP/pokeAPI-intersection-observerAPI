@@ -15,6 +15,10 @@ module.exports = {
     new HtmlWebpackPlugin({
 		template: path.resolve(__dirname, "src", "todo.html"),
 		filename: "todo.html"
+	}),
+    new HtmlWebpackPlugin({
+		template: path.resolve(__dirname, "src", "darkmode.html"),
+		filename: "darkmode.html"
 	})],
     module: {
         rules: [

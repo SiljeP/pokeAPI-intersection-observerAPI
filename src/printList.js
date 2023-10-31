@@ -21,6 +21,8 @@ function printList (){
         function clickHandler(event){
             updateJSONinLocalStorage("todo-items", parseInt(event.target.name))
         }
+
+        // localStorage.setItem("todo-items", "[]") DEN HER LAVER FEJL
     })
 }
 
