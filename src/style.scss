@@ -2,6 +2,8 @@
 @use "./progress";
 @use "./todo";
 @use "./darkmode";
+@use "./switch";
+@use "./touch";
 :root {
     --mainBg: mediumpurple;
 }

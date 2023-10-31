@@ -19,6 +19,10 @@ module.exports = {
     new HtmlWebpackPlugin({
 		template: path.resolve(__dirname, "src", "darkmode.html"),
 		filename: "darkmode.html"
+	}),
+    new HtmlWebpackPlugin({
+		template: path.resolve(__dirname, "src", "touch.html"),
+		filename: "touch.html"
 	})],
     module: {
         rules: [
